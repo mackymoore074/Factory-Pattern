@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Enter the type of Vehicle you like");
+            string vehicleType = Console.ReadLine();
+            var vehicle = VehicleFactory.GetVehicle(vehicleType);
+            vehicle.Drive();
         }
     }
 }
